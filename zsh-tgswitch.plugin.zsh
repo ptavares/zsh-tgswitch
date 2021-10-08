@@ -9,8 +9,8 @@ autoload -U add-zsh-hook
 ################################################################################
 # constant
 ################################################################################
-bold="bold"
-none="none"
+BOLD="bold"
+NONE="none"
 
 ################################################################################
 # Plugin main
@@ -28,7 +28,6 @@ _zsh_tgswitch_log() {
     local font=$1
     local color=$2
     local msg=$3
-
     if [ $font = $BOLD ]
     then
         echo $fg_bold[$color] "[zsh-tgswitch-plugin] $msg" $reset_color
@@ -66,8 +65,6 @@ _zsh_tgswitch_download_install() {
     tar xzf ${TGSWITCH_HOME}/tgswitch.tar.gz --directory ${TGSWITCH_HOME} 2>&1 > /dev/null
     rm -rf ${TGSWITCH_HOME}/tgswitch.tar.gz
     echo ${version} > ${ZSH_TGSWITCH_VERSION_FILE}
-    _zsh_tgswitch_log $BOLD "blue" "Creating directory : $HOME/bin"
-    mkdir $HOME/bin
 }
 
 _zsh_tgswitch_install() {
@@ -116,7 +113,7 @@ fi
 # ------------------------------------------------------------------------------
 # Set Alias for tgswitch to always use $HOME/.local/bin directory
 # ------------------------------------------------------------------------------
-alias tgswitch='tgswitch --bin=$HOME/.local/bin/terraform'
+alias tgswitch='tgswitch --bin=$HOME/.local/bin/terragrunt'
 
 # ------------------------------------------------------------------------------
 # function to load tgswitch automatically
