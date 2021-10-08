@@ -10,12 +10,10 @@ _This documentation section is generated automatically_
 
 <!--TOC-->
 
-- [zsh-exa](#zsh-exa)
+- [zsh-tgswitch](#zsh-tgswitch)
   - [Table of content](#table-of-content)
-  - [Supported Operating system](#supported-operating-system)
   - [Usage](#usage)
-  - [Aliases set up by plugin](#aliases-set-up-by-plugin)
-  - [Updating exa](#updating-exa)
+  - [Updating tgswitch](#updating-tgswitch)
   - [License](#license)
 
 <!--TOC-->
