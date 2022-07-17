@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="0.1.1"></a>
+## 0.1.1 (2022-07-17)
+
+### Fixed
+
+- 🐛 fix duplicate path addition [[01b99c9](https://github.com/ptavares/zsh-tgswitch/commit/01b99c94c5de10a2a21018658a03af419ce37927)]
+
+
 <a name="0.1.0"></a>
 ## 0.1.0 (2021-10-08)
 
